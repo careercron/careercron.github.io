@@ -89,6 +89,11 @@ body {
   width: 100%;
 }
 
+.cc-logo {
+  margin-bottom: -2rem;
+  width: 180px;
+}
+
 .header {
   color: var(--primary-tint-color);
   text-shadow: -0.2333rem 0 var(--border-color), 0 0.2333rem var(--border-color), 0.2333rem 0 var(--border-color), 0 -0.2333rem var(--border-color);
@@ -145,10 +150,16 @@ footer {
   text-align: center;
   width: 100vw;
 }
+
 /* Mobile */
 @media screen and (max-width: 820px) {
   .container {
     padding: 0 1.333rem;
+  }
+
+  .cc-logo {
+    margin-bottom: -1.333rem;
+    width: 120px;
   }
 
   .header {
@@ -183,6 +194,11 @@ footer {
 
 /* Mini Mode */
 @media screen and (max-width: 230px) {
+  .cc-logo {
+    margin-bottom: -1rem;
+    width: 80px;
+  }
+  
   .header {
     font-size: 1.5rem;
   }
