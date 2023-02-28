@@ -1,0 +1,14 @@
+{
+  "name": "Forzen.io",
+  "icons": [
+    {
+      "src": "static/assets/images/cc_150x150.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
