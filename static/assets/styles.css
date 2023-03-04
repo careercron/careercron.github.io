@@ -67,7 +67,7 @@ html {
 
 html,
 body {
-  background: url("./images/skylake.png");
+  background: url("./images/skylake.avif");
   background-size: cover;
   background-position: bottom;
   color: var(--text-color);
