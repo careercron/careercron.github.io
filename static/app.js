@@ -22,7 +22,7 @@
       .padStart(2, "0")},`;
 
     if (
-      `${time.getMonth()} ${time.getDay()}` ===
+      `${time.getMonth()} ${time.getDay()}` !==
       `${pi.getMonth()} ${pi.getDay()}`
     ) {
       !document
