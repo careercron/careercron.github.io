@@ -73,6 +73,14 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+}
+
+main {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -81,9 +89,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   justify-content: center;
   padding: 0 3.333rem;
+  margin: 0;
   text-align: center;
+  overflow: hidden;
 }
 .container * {
   width: 100%;
@@ -96,7 +107,8 @@ body {
 
 .header {
   color: var(--primary-tint-color);
-  text-shadow: -0.2333rem 0 var(--border-color), 0 0.2333rem var(--border-color), 0.2333rem 0 var(--border-color), 0 -0.2333rem var(--border-color);
+  text-shadow: -0.2333rem 0 var(--border-color), 0 0.2333rem var(--border-color),
+    0.2333rem 0 var(--border-color), 0 -0.2333rem var(--border-color);
   font-size: 5rem;
   line-height: 1rem;
   width: 100%;
@@ -183,7 +195,7 @@ a:hover {
     margin-bottom: -1rem;
     width: 80px;
   }
-  
+
   .header {
     font-size: 1.5rem;
   }
@@ -192,6 +204,22 @@ a:hover {
   .pi {
     font-size: 1.333rem;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #11191fd9;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
 }
 
 /* 

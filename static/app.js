@@ -19,7 +19,21 @@
       .toString()
       .padStart(2, "0")}:${Math.floor((diff / 1000) % 60)
       .toString()
-      .padStart(2, "0")}`;
+      .padStart(2, "0")},`;
+
+    if (
+      `${time.getMonth()} ${time.getDay()}` ===
+      `${pi.getMonth()} ${pi.getDay()}`
+    ) {
+      !document
+        .getElementById("prerelease")
+        .classList.value.includes("hidden") &&
+        document.getElementById("prerelease").classList.add("hidden");
+      document
+        .getElementById("alphaRelease")
+        .classList.value.includes("hidden") &&
+        document.getElementById("alphaRelease").classList.remove("hidden");
+    }
   };
 
   decrementTimeByASecond();

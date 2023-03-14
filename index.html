@@ -12,10 +12,11 @@
     <link rel="apple-touch-icon" href="/static/assets/images/cc_150x150.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="/static/assets/styles.css" />
+    <link rel="stylesheet" href="/static/assets/confetti-rain.css" />
     <title>CareerCron — a career aide and guide.</title>
   </head>
   <body id="body">
-    <div class="container">
+    <div id="prerelease" class="container">
       <header>
         <img
           class="cc-logo"
@@ -35,12 +36,52 @@
       </header>
       <main>
         <p>
-          Coming<span id="in"> in</span><br/>
+          Coming<span id="in"> in</span><br />
           <span style="font-family: 'Courier New', Courier, monospace" id="time"
             >0 days, 00:00:00</span
-          >, <br/><br/><span class="pi">π</span> • 2023
+          ><br /><br /><span class="pi">π</span> • 2023
         </p>
       </main>
+      <footer class="copyright-notice">Copyright © 2023 Preston Nalls</footer>
+    </div>
+    <div id="alphaRelease" class="container hidden">
+      <div class="confetti">
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+        <div class="confetti-piece">π</div>
+      </div>
+      <header>
+        <img
+          class="cc-logo"
+          alt="CareerCron logo"
+          src="/static/assets/images/cc_logo.avif"
+        />
+        <h1 class="header">CareerCron</h1>
+        <br />
+        <p>Happy <span class="pi">π</span> Day! 🎉</p>
+
+        <h2 class="subheader">
+          The alpha-version release for the web app is taking longer than
+          expected.<br />
+          I'm working quickly to ensure it's available as soon as possible.<br />
+          <br />Thank you for your patience.<br />
+          <br />
+          — pjnalls
+        </h2>
+        <hr />
+      </header>
+      <footer class="copyright-notice">Copyright © 2023 Preston Nalls</footer>
     </div>
     <script src="/static/app.js"></script>
   </body>
